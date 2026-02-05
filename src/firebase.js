@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB7wJppXtFrSOnz2ajZ0Ib0iCrrhu5YAbA",
-  authDomain: "room-management-app-e48b9.firebaseapp.com",
-  projectId: "room-management-app-e48b9",
-  storageBucket: "room-management-app-e48b9.firebasestorage.app",
-  messagingSenderId: "671186566405",
-  appId: "1:671186566405:web:eb53506b0b4192ce560b6c"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
